@@ -10,9 +10,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      IMAGE_NAME: chetankumaarbagaria
-
     steps:
 
       - name: Checkout Repository
@@ -41,7 +38,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t $IMAGE_NAME/ticketapp8:latest .
+        run: docker build -t chetankumaarbagaria/ticketapp8:latest .
 
       - name: Push Docker Image
-        run: docker push $IMAGE_NAME/ticketapp8:latest
+        run: docker push chetankumaarbagaria/ticketapp8:latest
