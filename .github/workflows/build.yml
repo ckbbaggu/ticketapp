@@ -41,12 +41,6 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t YOUR_DOCKER_USERNAME/ticketapp8:latest .
-
-      - name: Push Docker Image
-        run: docker push YOUR_DOCKER_USERNAME/ticketapp8:latest
-
-      - name: Build Docker Image
         run: docker build -t $IMAGE_NAME/ticketapp8:latest .
 
       - name: Push Docker Image
