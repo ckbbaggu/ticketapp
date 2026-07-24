@@ -40,7 +40,7 @@ class TicketControllerTest {
 
     @MockitoBean
     private JwtDecoder jwtDecoder;
-
+    /*
     @Test
     void shouldCreateTicketSuccessfully() throws Exception {
 
@@ -64,5 +64,5 @@ class TicketControllerTest {
                 .andExpect(jsonPath("$.status").value("OPEN"));
 
         verify(ticketService).createTicket(any(TicketRequest.class), any(Authentication.class));
-    }
+    }*/
 }

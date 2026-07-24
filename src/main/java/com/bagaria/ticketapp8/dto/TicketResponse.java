@@ -8,7 +8,7 @@ import lombok.NoArgsConstructor;
 
 public record TicketResponse(int tid,
                              String title,
-                             //String description,
+                             String description,
                              TicketStatus status,
                              TicketPriority priority//,
                              //LocalDateTime createdDate,

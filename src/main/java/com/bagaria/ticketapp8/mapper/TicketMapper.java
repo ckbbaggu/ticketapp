@@ -10,7 +10,7 @@ public class TicketMapper {
         return new TicketResponse(
                 ticket.getTid(),
                 ticket.getTitle(),
-                //ticket.getDescription(),
+                ticket.getDescription(),
                 ticket.getStatus(),
                 ticket.getPriority()
         );
